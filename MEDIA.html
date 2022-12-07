@@ -1,12 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="bulma-pageloader-master/dist/css/bulma-pageloader.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bulma-extensions-master/dist/css/bulma-extensions.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="pageloader is-active  is-left-to-right "></div> -->
+
+
+      <!-- <section class="hero is-medium "> -->
+        <!-- Hero head: will stick at the top -->
+        <div id="particles-js"></div>
+        <div class="hero-head mb-6">
+          <nav class="navbar is-fixed-top">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <img class="rotating" src="img/krypton-gradient.svg"alt="Logo"/>
+                  <h1 class="is-size-3 ml-3">Network</h1>
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item link_nav" href="index.html"> Home </a>
+                  <a class="navbar-item link_nav"> About </a>
+                  <a class="navbar-item link_nav" href="roadmap.html"> ROADMAP </a>
+                  <a class="navbar-item link_nav"> MEDIA </a>
+                  <a class="navbar-item link_nav"> TELEGRAM </a>
+                  <span class="navbar-item ">
+                    <a class="button is-primary is-inverted  has-gradient slanted butoon-shape" style="background-color: #6800f6 ;transform: skewX(-20deg);">
+                      <span class="has-text-white">REGISTER</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </nav>  
+        </div> 
+        <!-- Hero content: will be in the middle -->
+         <header>
+          <div class="container is-medium  mt-6">
+            <div class="columns is-vcentered mt-6">
+              <div class="column  is-5 ml-6">
+                <div class="hero-body mt-6">
+                  <div class="container has-text-centered ">
+                    <p class="title is-size-1 has-text-left">News & Media</p>
+                    <p class=" has-text-grey-lighter has-text-left">
+                      Computer networking solutions help businesses enhance traffic, keep users happy, secure the network, and easily provision services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6 pt-6 ">
+                <img src="img/media.svg" style="width:90%; height:90%;" />
+              </div>
+            </div>
+          </div>
+          <!-- Hero footer: will stick at the bottom -->
+          <div class="cta-wrapper has-text-centered mt-6">
+            
+          </div>
+          <div class="hero-foot m-6">
+            <div class="container">
+              <div class="tabs is-centered">
+                <ul style="border:none;">
+                  <li>
+                    <img src="img/bitit.svg" style="width: 10.75rem; height: 6rem" />
+                  </li>
+                  <li>
+                    <img src="img/coin.svg" style="width: 10.75rem; height: 6rem" />
+                  </li>
+                  <li>
+                    <img
+                      src="img/cryptomarket.svg"
+                    style="width: 10.75rem; height: 6rem"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header> 
+  </section>
+  <!-- end hero section -->
+
+
+    <!-- start continer section -->
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column ">
+                <div class="container-API my-3">
+                <template id="post-template">
+                 <div class="columns is-centered">
+                    <div class="column is-3">
+                        <img src="team-img/post1.svg" style="border-radius: 5%;" >
+                      </div>
+                      <div class="column is-5">
+                        <p class="subtitle">POST_TITLE  &nbsp; &nbsp; &nbsp; <span class="date-Post is-size-7">&nbsp; &nbsp;27.05.2021</span></p>
+                        <p class="p-color">
+                           POST_BODY ...
+                         </p>
+                         <div class="columns is-vcentered">
+                         <div class="column is-2 border-circle"><img src="team-img/john.svg" class="border-circle"></div>
+                         <div class="column has-text-white"><p class="is-size-7">by John Cambell</p></div>
+                         <div class="column has-text-white is-offset-4">7&nbsp; &nbsp; 9</div>
+                       </div>
+                 </div>
+                 </div>
+                 </template>
+             </div>
+            </div>
+            <div class="column is-3">
+                <div class="control-material is-secondary my-6">
+                <input class="material-input " type="text" required="" placeholder="Name" >
+                </div> 
+                <h2 class="has-text-link is-size-5 my-6">CATEGORIES</h2>
+                 <a href="#" class="has-text-link my-4">All Poste</a><br>
+                 <div class="my-4"><a class="py-4" href="#">Blockchain</a><br></div>
+                 <div class="my-4"><a class="py-4" href="#">Crypto Market</a><br></div>
+                 <div class="my-4"><a class="py-4" href="#">Cryptomining</a><br></div>
+                 <div class="my-4"><a class="py-4" href="#">Featured</a><br></div>
+
+                 <h2 class="has-text-link is-size-5 my-6">TAGS</h2>
+                 <div class="tags">
+                    <span class="tag has-text-link" style="background-color: #250064;">Bitcoin</span>
+                    <span class="tag has-text-link" style="background-color: #250064;">Cryptocurrency</span>
+                    <span class="tag has-text-link" style="background-color: #250064;">Blockchain</span>
+                    <span class="tag has-text-link" style="background-color: #250064;">Ethereum</span>
+                </div>
+
+
+                 <h2 class="has-text-link is-size-5 mt-6 mb-2">ARCHIVES</h2>
+                 <div class="select">
+                    <select class="is-hovered" style="background-color:#1c004c; color:white;">
+                      <option>Select Month</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- End continer section  -->
+    <!-- footer -->
+
+    <section>
+      <footer class="krypton-footer">
+        <div class="container">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img
+              class="rotating"
+              src="img/krypton-gradient.svg"
+              style="width: 70px; height: 70px"
+            />
+            <div class="brand-name is-size-3 has-text-white">Network</div>
+            <div class="brand-subtitle has-text-link">
+              brought to another level
+            </div>
+          </div>
+
+          <!-- Columns -->
+          <div class="columns footer-columns is-vcentered">
+            <div class="column is-4">
+              <!-- Links group -->
+              <ul class="footer-links">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+
+                <li>
+                  <a href="#">About</a>
+                </li>
+
+                <li>
+                  <a href="#">Roadmap</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Newsletter -->
+            <div class="column is-4">
+              <div class="subscribe-block">
+                <form>
+                  <!-- Field -->
+                  <div class="control">
+                    <!-- Special input -->
+                    <input
+                      class="krypton-subscribe-input"
+                      type="email"
+                      name="email"
+                      placeholder=""
+                    />
+                    <button
+                      class="subscribe-button button is-primary is-rounded"
+                    >
+                      <span>Subscribe</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Links group -->
+            <div class="column is-4">
+              <ul class="footer-links">
+                <li>
+                  <a href="#">Register</a>
+                </li>
+
+                <li>
+                  <a href="#">Media</a>
+                </li>
+
+                <li>
+                  <a href="#">Telegram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Copyright -->
+          <p class="k-copyright has-text-link">
+            © 2022-2023 | Network. All Rights Reserved
+          </p>
+          <br />
+          <!-- Made by -->
+          <p class="coded-by has-text-white">
+            Designed by
+            <a
+              href="https://cssninja.io"
+              target="_blank"
+              class="has-text-primary"
+              >Css Ninja</a
+            >
+            Coded by
+            <a
+              href="https://cssninja.io"
+              target="_blank"
+              class="has-text-primary"
+              >Aman Najibeh</a
+            >
+          </p>
+        </div>
+
+        <!-- Absolute image -->
+        <!-- <img class="solar-system" src="/img/bg/solar.svg" alt=""> -->
+      </footer>
+    </section>
+    <!-- End footer -->
+
+    <script src="Api.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
